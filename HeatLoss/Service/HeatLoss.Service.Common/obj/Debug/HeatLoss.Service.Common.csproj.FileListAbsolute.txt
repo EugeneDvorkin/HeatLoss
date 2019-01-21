@@ -1,0 +1,6 @@
+E:\!!!!ТЕКУЩЕЕ\HeatLoss\Service\HeatLoss.Service.Common\bin\Debug\HeatLoss.Service.Common.dll
+E:\!!!!ТЕКУЩЕЕ\HeatLoss\Service\HeatLoss.Service.Common\bin\Debug\HeatLoss.Service.Common.pdb
+E:\!!!!ТЕКУЩЕЕ\HeatLoss\Service\HeatLoss.Service.Common\obj\Debug\HeatLoss.Service.Common.csprojAssemblyReference.cache
+E:\!!!!ТЕКУЩЕЕ\HeatLoss\Service\HeatLoss.Service.Common\obj\Debug\HeatLoss.Service.Common.csproj.CoreCompileInputs.cache
+E:\!!!!ТЕКУЩЕЕ\HeatLoss\Service\HeatLoss.Service.Common\obj\Debug\HeatLoss.Service.Common.dll
+E:\!!!!ТЕКУЩЕЕ\HeatLoss\Service\HeatLoss.Service.Common\obj\Debug\HeatLoss.Service.Common.pdb

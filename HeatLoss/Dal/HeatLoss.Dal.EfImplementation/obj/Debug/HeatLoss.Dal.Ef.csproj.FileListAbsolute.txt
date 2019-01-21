@@ -1,0 +1,14 @@
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\bin\Debug\HeatLoss.Dal.Ef.dll.config
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\bin\Debug\HeatLoss.Dal.Ef.dll
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\bin\Debug\HeatLoss.Dal.Ef.pdb
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\bin\Debug\EntityFramework.dll
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\bin\Debug\EntityFramework.SqlServer.dll
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\bin\Debug\HeatLoss.Dal.Common.dll
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\bin\Debug\HeatLoss.Dal.Common.pdb
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\bin\Debug\EntityFramework.xml
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\bin\Debug\EntityFramework.SqlServer.xml
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\obj\Debug\HeatLoss.Dal.Ef.csprojAssemblyReference.cache
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\obj\Debug\HeatLoss.Dal.Ef.csproj.CoreCompileInputs.cache
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\obj\Debug\HeatLoss.Dal.Ef.csproj.CopyComplete
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\obj\Debug\HeatLoss.Dal.Ef.dll
+F:\Projects\HeatLoss\Dal\HeatLoss.Dal.Ef\obj\Debug\HeatLoss.Dal.Ef.pdb
