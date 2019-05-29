@@ -49,11 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EF\Configuration\OvergroundCanalConfiguration.cs" />
+    <Compile Include="EF\Configuration\RoomConfiguration.cs" />
     <Compile Include="EF\HeatLossContext.cs" />
     <Compile Include="EF\HeatLossInitializer.cs" />
     <Compile Include="EF\Configuration\UndergroundConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\OvergroundCanalRepository.cs" />
+    <Compile Include="Repository\RoomRepository.cs" />
     <Compile Include="Repository\UndergroundRepository.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>

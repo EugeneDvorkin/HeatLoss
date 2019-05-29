@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using HeatLoss.Dal.Common.IRepositoty.Laying;
+using HeatLoss.Dal.Common.IRepository.Laying;
 
-namespace HeatLoss.Dal.Common.IRepositoty
+namespace HeatLoss.Dal.Common.IRepository
 {
     public interface IUnitOfWork : IDisposable
     {
@@ -10,6 +10,8 @@ namespace HeatLoss.Dal.Common.IRepositoty
 
         IOvergroundCanalRepository OvergroundCanal { get; }
 
-        Task Save();
+        IRoomRepository RoomRepository { get; }
+
+        Task SaveAsync();
     }
 }

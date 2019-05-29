@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Common;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using HeatLoss.Dal.Common;
 using HeatLoss.Dal.Common.Entity.UndergroundLaying;
-using HeatLoss.Dal.Common.IRepositoty.Laying;
+using HeatLoss.Dal.Common.IRepository.Laying;
 using HeatLoss.Dal.EfImplementation.EF;
 
 namespace HeatLoss.Dal.EfImplementation.Repository
@@ -28,7 +27,7 @@ namespace HeatLoss.Dal.EfImplementation.Repository
             }
             catch (Exception e)
             {
-                throw new DalException(DalException.ErrorType.NorFoundDiameter, DalException.LayingType.UndergroundLaying, e.Message, e.InnerException);
+                throw new DalException(DalException.ErrorType.NotFoundDiameter, DalException.LayingType.UndergroundLaying, e.Message, e.InnerException);
             }
         }
 
@@ -63,7 +62,7 @@ namespace HeatLoss.Dal.EfImplementation.Repository
             }
             catch (Exception e)
             {
-                throw new DalException(DalException.ErrorType.NorFoundDiameter, DalException.LayingType.UndergroundLaying, e.Message, e.InnerException);
+                throw new DalException(DalException.ErrorType.NotFoundDiameter, DalException.LayingType.UndergroundLaying, e.Message, e.InnerException);
             }
         }
 
@@ -72,11 +71,6 @@ namespace HeatLoss.Dal.EfImplementation.Repository
             try
             {
                 var temp = await GetAsync(entity.Dp);
-
-                if (temp == null)
-                {
-                    throw new DalException(DalException.ErrorType.NorFoundDiameter, DalException.LayingType.UndergroundLaying, "Deleting UndergroundLaying entity exception");
-                }
 
                 _context.Entry(temp).State = EntityState.Deleted;
                 //await _context.SaveChangesAsync().ConfigureAwait(false);
@@ -91,7 +85,8 @@ namespace HeatLoss.Dal.EfImplementation.Repository
         {
             try
             {
-                var temp = await GetAsync(entity.Dp);
+                var temp = await _context.UndergroundLaying.Where(e => e.Dp == entity.Dp).SingleOrDefaultAsync()
+                    .ConfigureAwait(false);
                 if (temp != null)
                 {
                     throw new DalException(DalException.ErrorType.ExistDiameter, DalException.LayingType.UndergroundLaying, "Create UndergroundLaying entity exception");

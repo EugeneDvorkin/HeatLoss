@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using HeatLoss.Dal.Common.Entity.OvergroundLaying.CanalLaying;
 
-namespace HeatLoss.Dal.Common.IRepositoty.Laying
+namespace HeatLoss.Dal.Common.IRepository.Laying
 {
     public interface IOvergroundCanalRepository : IRepository<OvergroundCanalLaying>
     {

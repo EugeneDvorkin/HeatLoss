@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using HeatLoss.Dal.Common;
-using HeatLoss.Dal.Common.IRepositoty;
-using HeatLoss.Dal.Common.IRepositoty.Laying;
+using HeatLoss.Dal.Common.IRepository;
+using HeatLoss.Dal.Common.IRepository.Laying;
 using HeatLoss.Dal.EfImplementation.EF;
 using HeatLoss.Dal.EfImplementation.Repository;
 
@@ -13,6 +13,7 @@ namespace HeatLoss.Dal.EfImplementation
         private readonly HeatLossContext _context;
         private UndergroundRepository _underground;
         private OvergroundCanalRepository _overgroundCanal;
+        private RoomRepository _roomRepository;
         private bool _disposed = false;
 
         public UnitOfWork(HeatLossContext context)
@@ -25,7 +26,9 @@ namespace HeatLoss.Dal.EfImplementation
         public IOvergroundCanalRepository OvergroundCanal =>
             _overgroundCanal ?? (_overgroundCanal = new OvergroundCanalRepository(_context));
 
-        public async Task Save()
+        public IRoomRepository RoomRepository => _roomRepository ?? (_roomRepository = new RoomRepository(_context));
+
+        public async Task SaveAsync()
         {
             try
             {

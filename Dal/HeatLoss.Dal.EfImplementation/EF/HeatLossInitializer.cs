@@ -1,4 +1,6 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
+using HeatLoss.Dal.Common.Entity;
 using HeatLoss.Dal.Common.Entity.OvergroundLaying.CanalLaying;
 using HeatLoss.Dal.Common.Entity.UndergroundLaying;
 
@@ -10,11 +12,12 @@ namespace HeatLoss.Dal.EfImplementation.EF
         {
             UndergroundLayingSet(context);
             OvergroundCanalSet(context);
+            RoomSet(context);
         }
 
         private void UndergroundLayingSet(HeatLossContext context)
         {
-            context.UndergroundLaying.AddRange(new[]
+            context.UndergroundLaying.AddRange(new List<UndergroundLaying>()
             {
                 new UndergroundLaying
                 {
@@ -321,7 +324,7 @@ namespace HeatLoss.Dal.EfImplementation.EF
 
         private void OvergroundCanalSet(HeatLossContext context)
         {
-            context.OvergroundCanalLaying.AddRange(new[]
+            context.OvergroundCanalLaying.AddRange(new List<OvergroundCanalLaying>()
             {
                 new OvergroundCanalLaying
                 {
@@ -515,5 +518,201 @@ namespace HeatLoss.Dal.EfImplementation.EF
                 }
             });
         }
-    }
-}
+
+        private void RoomSet(HeatLossContext context)
+        {
+            context.RoomLaying.AddRange(new List<RoomLaying>()
+            {
+                new RoomLaying()
+                {
+                    Id = 1,
+                    D = 48,
+                    Q35 = 19,
+                    Q85 = 31,
+                    Q185 = 67,
+                    Q285 = 113,
+                    Q385 = 156
+                },
+                new RoomLaying
+                {
+                    Id = 2,
+                    D = 57,
+                    Q35 = 21,
+                    Q85 = 36,
+                    Q185 = 73,
+                    Q285 = 120,
+                    Q385 = 165
+                },
+                new RoomLaying
+                {
+                    Id = 3,
+                    D = 76,
+                    Q35 = 23,
+                    Q85 = 41,
+                    Q185 = 83,
+                    Q285 = 135,
+                    Q385 = 185
+                },
+                new RoomLaying
+                {
+                    Id = 4,
+                    D = 89,
+                    Q35 = 27,
+                    Q85 = 45,
+                    Q185 = 91,
+                    Q285 = 144,
+                    Q385 = 198
+                },
+                new RoomLaying
+                {
+                    Id = 5,
+                    D = 108,
+                    Q35 = 29,
+                    Q85 = 51,
+                    Q185 = 98,
+                    Q285 = 157,
+                    Q385 = 214
+                },
+                new RoomLaying
+                {
+                    Id = 6,
+                    D = 133,
+                    Q35 = 32,
+                    Q85 = 56,
+                    Q185 = 109,
+                    Q285 = 173,
+                    Q385 = 235
+                },
+                new RoomLaying
+                {
+                    Id = 7,
+                    D = 159,
+                    Q35 = 36,
+                    Q85 = 63,
+                    Q185 = 120,
+                    Q285 = 188,
+                    Q385 = 257
+                },
+                new RoomLaying
+                {
+                    Id = 8,
+                    D = 219,
+                    Q35 = 44,
+                    Q85 = 78,
+                    Q185 = 143,
+                    Q285 = 223,
+                    Q385 = 300
+                },
+                new RoomLaying
+                {
+                    Id = 9,
+                    D = 273,
+                    Q35 = 50,
+                    Q85 = 87,
+                    Q185 = 159,
+                    Q285 = 245,
+                    Q385 = 321
+                },
+                new RoomLaying
+                {
+                    Id = 10,
+                    D = 325,
+                    Q35 = 58,
+                    Q85 = 97,
+                    Q185 = 176,
+                    Q285 = 273,
+                    Q385 = 355
+                },
+                new RoomLaying
+                {
+                    Id = 11,
+                    D = 377,
+                    Q35 = 65,
+                    Q85 = 108,
+                    Q185 = 193,
+                    Q285 = 299,
+                    Q385 = 390
+                },
+                new RoomLaying
+                {
+                    Id = 12,
+                    D = 426,
+                    Q35 = 71,
+                    Q85 = 117,
+                    Q185 = 212,
+                    Q285 = 323,
+                    Q385 = 415
+                },
+                new RoomLaying
+                {
+                    Id = 13,
+                    D = 478,
+                    Q35 = 77,
+                    Q85 = 126,
+                    Q185 = 222,
+                    Q285 = 344,
+                    Q385 = 443
+                },
+                new RoomLaying
+                {
+                    Id = 14,
+                    D = 529,
+                    Q35 = 84,
+                    Q85 = 137,
+                    Q185 = 243,
+                    Q285 = 371,
+                    Q385 = 476
+                },
+                new RoomLaying
+                {
+                    Id = 15,
+                    D = 630,
+                    Q35 = 96,
+                    Q85 = 155,
+                    Q185 = 273,
+                    Q285 = 409,
+                    Q385 = 525
+                },
+                new RoomLaying
+                {
+                    Id = 16,
+                    D = 720,
+                    Q35 = 107,
+                    Q85 = 172,
+                    Q185 = 300,
+                    Q285 = 450,
+                    Q385 = 579
+                },
+                new RoomLaying
+                {
+                    Id = 17,
+                    D = 820,
+                    Q35 = 119,
+                    Q85 = 189,
+                    Q185 = 331,
+                    Q285 = 508,
+                    Q385 = 651
+                },
+                new RoomLaying
+                {
+                    Id = 18,
+                    D = 920,
+                    Q35 = 130,
+                    Q85 = 211,
+                    Q185 = 362,
+                    Q285 = 549,
+                    Q385 = 693
+                },
+                new RoomLaying
+                {
+                    Id = 19,
+                    D = 1020,
+                    Q35 = 140,
+                    Q85 = 229,
+                    Q185 = 388,
+                    Q285 = 582,
+                    Q385 = 759
+                }
+            });
+        }
+    }}

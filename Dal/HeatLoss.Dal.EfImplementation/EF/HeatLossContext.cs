@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using System.Reflection;
+using HeatLoss.Dal.Common.Entity;
 using HeatLoss.Dal.Common.Entity.OvergroundLaying.CanalLaying;
 using HeatLoss.Dal.Common.Entity.UndergroundLaying;
 
@@ -13,7 +14,10 @@ namespace HeatLoss.Dal.EfImplementation.EF
         }
 
         public virtual DbSet<UndergroundLaying> UndergroundLaying { get; set; }
+
         public virtual DbSet<OvergroundCanalLaying> OvergroundCanalLaying { get; set; }
+
+        public virtual DbSet<RoomLaying> RoomLaying { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

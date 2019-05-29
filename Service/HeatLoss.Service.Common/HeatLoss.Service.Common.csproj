@@ -41,10 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BllException.cs" />
     <Compile Include="Entity\CalculationResult.cs" />
     <Compile Include="Entity\StartParams.cs" />
-    <Compile Include="IService\IHeatLoosCalculation.cs" />
+    <Compile Include="IService\HeatLoosCalculation.cs" />
+    <Compile Include="IService\ILogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dal\HeatLoss.Dal.Common\HeatLoss.Dal.Common.csproj">
+      <Project>{2340f316-a3ce-4965-9179-343b5e2ea8a2}</Project>
+      <Name>HeatLoss.Dal.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

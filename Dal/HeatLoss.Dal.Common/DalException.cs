@@ -29,7 +29,7 @@ namespace HeatLoss.Dal.Common
         public enum ErrorType
         {
             ExistDiameter,
-            NorFoundDiameter,
+            NotFoundDiameter,
             DatabaseException
         }
 
@@ -37,7 +37,8 @@ namespace HeatLoss.Dal.Common
         {
             UndergroundLaying,
             OverGroundCanalLaying,
-            CommonLaying
+            CommonLaying,
+            RoomLaying
         }
     }
 }

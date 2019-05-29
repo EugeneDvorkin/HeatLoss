@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace HeatLoss.Dal.Common.IRepositoty.Laying
+namespace HeatLoss.Dal.Common.IRepository.Laying
 {
     public interface IUndergroundRepository : IRepository<Entity.UndergroundLaying.UndergroundLaying>
     {
