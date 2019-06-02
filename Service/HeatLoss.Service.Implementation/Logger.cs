@@ -2,6 +2,7 @@
 using HeatLoss.Dal.Common;
 using HeatLoss.Service.Common.Entity;
 using NLog;
+using ILogger = NLog.ILogger;
 
 namespace HeatLoss.Service.Implementation
 {

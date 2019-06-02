@@ -6,7 +6,7 @@ using HeatLoss.Dal.Common.Entity.UndergroundLaying;
 
 namespace HeatLoss.Dal.EfImplementation.EF
 {
-    public class HeatLossInitializer : DropCreateDatabaseIfModelChanges<HeatLossContext>
+    public class HeatLossInitializer : CreateDatabaseIfNotExists<HeatLossContext>
     {
         protected override void Seed(HeatLossContext context)
         {
